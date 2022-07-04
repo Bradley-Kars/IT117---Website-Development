@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<title>Jobs</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+  <body style="background-color: #212121">
+    <header>
+	<img src="images/logo.jpg" alt="Toms Tacos Logo" width="200" height="105"<br>
+        <h1>Tom's Tacos - We're Hiring!</h1>
+    </header>
+    <nav>
+        <ul id="list-nav">
+            <li class="first"><a href="index.html">Homepage</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+			<li><a href="history.html">History</a></li>
+			<li><a href="chef.html">Chef</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="Jobs.html">Jobs</a></li>
+			<li class="last"><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+<main>
+<form action="" method="get" autocomplete=“on” class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend><img src="images/logo.jpg" alt="Toms Tacos Logo" width="200" height="105"<br></legend>
+
+<label class="col-md-4 control-label" for="Title">Title</label>
+  <div class="col-md-4">
+	<select name = "dropdown">
+		<option value = "mr" selected>Mr.</option>
+		<option value = "miss">Miss.</option>
+		<option value = "mrs">Mrs.</option>
+		<option value = "ms">Ms.</option>
+		<option value = "none">Perfer Not To Say</option>
+	</select>
+
+<!-- Text input-->
+<div class="form">
+  <label class="col-md-4 control-label" for="firstname">First Name</label>  
+  <div class="col-md-4">
+  <input id="firstname" name="firstname" type="text" class="name" required>
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form">
+  <label class="col-md-4 control-label" for="lastname">Last Name</label>  
+  <div class="col-md-4">
+  <input id="lastname" name="lastname" type="text" class="name" required>
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form">
+  <label class="col-md-4 control-label" for="phone">Phone Number</label>  
+  <div class="col-md-4">
+  <input id="phone" name="phone" type="text" class="phone" required>
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form">
+  <label class="col-md-4 control-label" for="email">E-mail</label>  
+  <div class="col-md-4">
+  <input id="email" name="email" type="text" class="email" required autocomplete=“off”>
+    
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form">
+  <label class="col-md-4 control-label" for="comments">Comments</label>
+  <div class="col-md-4">
+<form action="/action_page.php">
+  <input type="file" id="myFile" name="filename">
+  <input type="submit">
+</form>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</main>
+<footer>
+<p>
+<a href="aboutus.html">About Us</a> | <a href="history.html">History</a> | <a href="chef.html">Chef</a> | <a href="menu.html">Menu</a> | <a href="Jobs.html">Jobs</a> | <a href="contactus.html">Contact Us</a>
+</p>
+</footer>
+</body>
+</html>

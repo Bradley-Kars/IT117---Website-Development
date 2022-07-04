@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<title>Contact Us</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+  <body style="background-color: #212121">
+    <header>
+	<img src="images/logo.jpg" alt="Toms Tacos Logo" width="200" height="105"<br>
+        <h1>Contact Tom's Tacos</h1>
+    </header>
+    <nav>
+        <ul id="list-nav">
+            <li class="first"><a href="index.html">Homepage</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+			<li><a href="history.html">History</a></li>
+			<li><a href="chef.html">Chef</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="Jobs.html">Jobs</a></li>
+			<li class="last"><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+<main>
+<form action="" method="get" autocomplete=“on” class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend><h2>Tell Us What You Think</h2></legend>
+
+<label class="col-md-4 control-label" for="reason">Reason</label>
+  <div class="col-md-4">
+	<select name = "dropdown">
+		<option value = "catering" selected>Catering</option>
+		<option value = "suggestions">Suggestions</option>
+		<option value = "issues">Issues</option>
+	</select>
+
+<!-- Text input-->
+<div class="form">
+  <label class="col-md-4 control-label" for="firstname">First Name</label>  
+  <div class="col-md-4">
+  <input id="firstname" name="firstname" type="text" class="name" required>
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form">
+  <label class="col-md-4 control-label" for="lastname">Last Name</label>  
+  <div class="col-md-4">
+  <input id="lastname" name="lastname" type="text" class="name" required>
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form">
+  <label class="col-md-4 control-label" for="phone">Phone Number</label>  
+  <div class="col-md-4">
+  <input id="phone" name="phone" type="text" class="phone" required>
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form">
+  <label class="col-md-4 control-label" for="email">E-mail</label>  
+  <div class="col-md-4">
+  <input id="email" name="email" type="text" class="email" required autocomplete=“off”>
+    
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form">
+  <label class="col-md-4 control-label" for="comments">Comments</label>
+  <div class="col-md-4">
+  <input id="comments" name="comments" type="text" class="comments" required>  
+<!--<textarea class="comments" id="comments" name="comments" rows="30" cols="90"> </textarea>-->
+  </div>
+</div>
+
+<h2>Enter a four-digit passscode, then click OK:</h2>
+<input id="id1" Type="number" min="1000" max="9999">
+<button onclick= "myFunction()">OK</button>
+<p id=passcode>
+<script>
+function myFunction(){
+var inpObj = document.getElementById("id1");
+if (inpObj.checkValidity() == false) {
+document.getElementById("passcode").innerHTML =
+inpObj.validationMessage;
+} else {
+document.getElementById("passcode").innerHTML - "Passcode Valid";
+}
+}
+</script>
+
+<!-- Button -->
+<div class="form">
+  <label class="col-md-4 control-label" for="Submit"></label>
+  <div class="col-md-4">
+    <button id="Submit" name="Submit" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</main>
+<footer>
+<p>
+<a href="aboutus.html">About Us</a> | <a href="history.html">History</a> | <a href="chef.html">Chef</a> | <a href="menu.html">Menu</a> | <a href="Jobs.html">Jobs</a> | <a href="contactus.html">Contact Us</a>
+</p>
+</footer>
+</body>
+</html>
